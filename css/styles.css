@@ -11,11 +11,22 @@
   --button-secondary-color: #f5f4fa;
   --primary-bg-color: #e5e5e5;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 .visually-hidden {
@@ -37,7 +48,18 @@ body {
 }
 /*-------------HEADER--------- */
 header {
-  background: #ffffff;
+  background-color: #ffffff;
+}
+.page-header {
+  background-color: #ffffff;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
 }
 .logo-header {
   color: var(--accent-color);
@@ -85,13 +107,16 @@ header {
 
 /*------------ HERO----------- */
 .hero {
+  text-align: center;
   background-color: #2f303a;
+  margin-bottom: 94px;
 }
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
@@ -100,14 +125,13 @@ header {
 .button {
   color: var(--title-text-color);
   background-color: var(--primary-white-color);
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
+  border: transparent;
+  border: 1px solid #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .button.primary {
   color: var(--primary-white-color);
@@ -120,25 +144,33 @@ header {
 /* ---------------SKROLL SECTIONS----------- */
 
 /* skrol list */
+.container.skroll {
+  margin-bottom: 94px;
+}
 .skroll-list-title {
   color: var(--title-text-color);
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .skroll-list-paragraph {
+  margin: 0;
+  padding: 0;
   color: var(--primary-text-color);
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
 }
 /* -------ЧЕМ МЫ ЗАНИМАЕМСЯ-------- */
 /* section title */
+.container.section {
+  margin-bottom: 94px;
+}
 .section-title {
   color: var(--title-text-color);
 
@@ -147,6 +179,7 @@ header {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 /* ---------COMMAND SECTION---------- */
 .command-section {
@@ -168,6 +201,8 @@ header {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 10px;
 }
 .command-list-paragraph {
   color: var(--primary-text-color);
@@ -175,7 +210,14 @@ header {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
   letter-spacing: 0.03em;
+  margin: 0;
+}
+.command-list-element {
+  background-color: #ffffff;
+  padding-top: 186px;
+  padding-bottom: 94px;
 }
 /* --------ФУТЕР---------- */
 
@@ -218,9 +260,7 @@ header {
 }
 
 /* ------------PORTFOLIO------------------- */
-header {
-  background: #ffffff;
-}
+
 .logo-portfolio-hed {
   color: var(--accent-color);
   font-family: Raleway;
@@ -270,6 +310,7 @@ header {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  border: transparent;
 }
 .button-portfolio .secondary {
   color: var(--title-text-color);
