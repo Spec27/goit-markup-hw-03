@@ -28,7 +28,6 @@ a {
   text-decoration: none;
   display: inline-block;
 }
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -38,6 +37,11 @@ a {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+.container.footer {
+  border-bottom-width: 11px;
+  border-bottom-style: solid;
+  border-bottom-color: #c4c4c4;
 }
 
 body {
@@ -109,7 +113,6 @@ header {
 .hero {
   text-align: center;
   background-color: #2f303a;
-  margin-bottom: 94px;
 }
 .hero-title {
   margin-top: 0;
@@ -145,7 +148,8 @@ header {
 
 /* skrol list */
 .container.skroll {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .skroll-list-title {
   color: var(--title-text-color);
@@ -169,7 +173,7 @@ header {
 /* -------ЧЕМ МЫ ЗАНИМАЕМСЯ-------- */
 /* section title */
 .container.section {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .section-title {
   color: var(--title-text-color);
@@ -179,7 +183,7 @@ header {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 /* ---------COMMAND SECTION---------- */
 .command-section {
@@ -232,6 +236,8 @@ header {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 .span-footer {
   color: #ffffff;
@@ -243,6 +249,7 @@ header {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  padding-bottom: 60px;
 }
 .footer-contact .address {
   color: var(--primary-white-color);
@@ -311,6 +318,7 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   border: transparent;
+  border-radius: 4px;
 }
 .button-portfolio .secondary {
   color: var(--title-text-color);
@@ -337,11 +345,13 @@ header {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 /* portfolio footer */
 .porfolio-footer {
   background-color: #2f303a;
 }
+
 .logo-porfolio-footer {
   color: var(--accent-color);
   font-family: Raleway;
@@ -350,6 +360,8 @@ header {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  padding-top: 60px;
+  padding-bottom: 20px;
 }
 .portfolio-footer-contact {
   font-family: Roboto;
@@ -358,6 +370,7 @@ header {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  padding-bottom: 60px;
 }
 .portfolio-footer-contact .address {
   color: var(--primary-white-color);
