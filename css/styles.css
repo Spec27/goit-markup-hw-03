@@ -228,6 +228,7 @@ body {
 /* ---------COMMAND SECTION---------- */
 .command-section {
   background-color: #f5f4fa;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .command-title {
@@ -422,7 +423,7 @@ body {
   display: flex;
   justify-content: center;
 
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .click {
   margin-right: 8px;
